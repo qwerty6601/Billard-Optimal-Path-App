@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Billard App</string>
+    <string name="user_id">ID</string>
+    <string name="gamemode">Spielart</string>
+    <string name="number_of_players">Spieleranzahl</string>
+    <string name="player_1_name">Spieler 1</string>
+    <string name="player_2_name">Spieler 2</string>
+    <string name="score_player_1">Punktzahl Spieler 1</string>
+    <string name="score_player_2">Punktzahl Spieler 2</string>
+    <string name="winner">Sieger</string>
+    <string name="gametime">Spieldauer</string>
+    <string name="btn_add">Add</string>
+    <string name="player_3_name">Spieler 3</string>
+    <string name="et_player_4_name">Spieler 4</string>
+    <string name="btn_statistics">Statistik</string>
+    <string name="BA_title_label">BA_title</string>
+    <string name="BA_title_hint">BA_title_hint</string>
+    <string name="BA_name">Billard App</string>
+    <string name="take_photo">Kamera öffnen</string>
+</resources>

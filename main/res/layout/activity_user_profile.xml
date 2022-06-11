@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UserProfileActivity"
+    android:background="@drawable/background">
+
+    <EditText
+        android:id="@+id/ptVorname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Vorname "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ptNachname"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="cursive"
+        android:shadowColor="#0E0E0E"
+        android:text="Nutzerprofil anlegen "
+        android:textColor="#070707"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/ptNachname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Nachname "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/ptNickname"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="65dp"
+        android:fontFamily="cursive"
+        android:text="Ich habe bereits ein Profil"
+        android:textColor="#0E0E0E"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/ptVorname"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnweiter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginRight="49dp"
+        android:layout_marginBottom="380dp"
+        android:text="weiter"
+        app:layout_constraintBottom_toTopOf="@+id/btnNutzerspeichern"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView"
+        android:background="@drawable/custom_button"/>
+
+    <EditText
+        android:id="@+id/ptNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginBottom="29dp"
+        android:ems="10"
+        android:hint="Nickname "
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btnGeburtsdatum"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnGeburtsdatum"
+        style="?android:spinnerStyle"
+        android:layout_width="144dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="59dp"
+        android:layout_marginLeft="59dp"
+        android:layout_marginBottom="56dp"
+        android:background="@drawable/custom_button"
+        android:fontFamily="sans-serif"
+        android:onClick="openDate"
+        android:paddingLeft="30dp"
+        android:text="Geburtsdatum"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toTopOf="@+id/btnNutzerspeichern"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnNutzerspeichern"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginLeft="72dp"
+        android:layout_marginEnd="72dp"
+        android:layout_marginRight="72dp"
+        android:layout_marginBottom="85dp"
+        android:text="Nutzerprofil speichern"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/custom_button"
+        android:padding="10dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
